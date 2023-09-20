@@ -1,0 +1,47 @@
+ * {
+     padding: 0;
+     margin: 0;
+ }
+
+ body {
+     background-color: antiquewhite;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+ input[type="text"] {
+     background-color: aliceblue;
+     color: black;
+     width: 600px;
+     height: 30px;
+     font-size: 18px;
+     display: flex;
+     margin: 10px;
+ }
+
+ label {
+     display: flex;
+     justify-content: center;
+ }
+ .formulario{
+    display: flex;
+    background-color: aliceblue;
+    height: 760px;
+ }
+
+.main, button {
+     display: flex;
+     background-color: rgb(172, 172, 172);
+     align-items: center;
+     width: 650px;
+     height: 50px;
+     justify-content: center;
+ }
+ button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+ }
