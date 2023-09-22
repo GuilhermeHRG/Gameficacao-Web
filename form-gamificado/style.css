@@ -1,47 +1,169 @@
- * {
-     padding: 0;
-     margin: 0;
- }
+/* Zera as margens e o padding padrão em todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+}
 
- body {
-     background-color: antiquewhite;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- }
-
- input[type="text"] {
-     background-color: aliceblue;
-     color: black;
-     width: 600px;
-     height: 30px;
-     font-size: 18px;
-     display: flex;
-     margin: 10px;
- }
-
- label {
-     display: flex;
-     justify-content: center;
- }
- .formulario{
+/* Estilos gerais para o corpo do documento */
+body {
+    background-color: rgb(76, 116, 134);
     display: flex;
-    background-color: aliceblue;
-    height: 760px;
- }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
-.main, button {
-     display: flex;
-     background-color: rgb(172, 172, 172);
-     align-items: center;
-     width: 650px;
-     height: 50px;
-     justify-content: center;
- }
- button:hover{
-    background-color: white;
+/* Estilos para campos de entrada de texto */
+input[type="text"] {
+    background-color: rgb(238, 238, 238);
     color: black;
+    padding-left: 10px;
+    width: 600px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 10px;
+}
+input[type="text"]#complemento {
+    background-color: rgb(238, 238, 238);
+    color: black;
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 10px;
+}
+input[type="text"]#cep{
+    background-color: rgb(238, 238, 238);
+    color: black;
+    width: 150px;
+    padding-left: 10px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 10px;
+}
+/* Estilos para o campo de entrada de email */
+input[type="email"] {
+    background-color: rgb(238, 238, 238);
+    color: black;
+    padding-left: 10px;
+    width: 600px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 10px;
+}
+input[type="date"] {
+    background-color: rgb(238, 238, 238);
+    color: black;
+    width: 200px;
+    height: 30px;
+    padding-left: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 10px;
+}
+input[type="number"] {
+    background-color: rgb(238, 238, 238);
+    color: black;
+    width: 80px;
+    height: 30px;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.styleEmail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-right: 30px;
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+.styleIdadeNome{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-right: 30px;
+    margin-left: 0;
+}
+.styleBairroN{
+    display: flex;
+    flex-direction: row;
+}
+.styleCep{
+    display: flex;
+    flex-direction: row;
+}
+/* Estilos para etiquetas (labels) */
+label {
+    display: flex;
+    font-size: 16px;
+}
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+/* Estilos para o contêiner do formulário */
+.formulario {
+    display: flex;
+    margin-top: 4px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 60vh;
+    padding-left: 10px;
+    border-radius: 20px;
+}
+
+/* Estilos para a área principal e botões */
+.main,
+button {
+    display: flex;
+    color: white;
+    border-color: white;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 104);
+    align-items: center;
+    width: 850px;
+    height: 50px;
+    justify-content: center;
+}
+
+/* Estilos para o botão quando o mouse paira sobre ele */
+button:hover {
+    background-color: white;
+    border-color: rgb(0, 0, 104);;
+    color: rgb(0, 0, 104);
     cursor: pointer;
- }
+}
+
+.grauFormacao{
+    display: flex;
+    margin: 10px;
+}
+hr{
+    background-color: rgb(0, 0, 104);
+    height: 1px;
+}
+/* Estilo da barra de progresso */
+progress#progresso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: white;
+    width: 850px; 
+    height: 20px; 
+   
+}
